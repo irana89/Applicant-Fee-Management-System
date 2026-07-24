@@ -1,0 +1,13 @@
+# Disable directory listing
+Options -Indexes
+
+# Set default index files
+DirectoryIndex view_reports.php
+
+# Enable mod_rewrite
+# RewriteEngine On
+# RewriteBase /psctmk/
+
+# Redirect root to view_reports.php (optional if DirectoryIndex already handles it)
+# RewriteRule ^$ view_reports.php [L]
+

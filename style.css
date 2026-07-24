@@ -1,0 +1,833 @@
+/* ===== General Page Styling ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+   /* background: 
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        url('img/png.png');*/
+    background-size: 100px 100px;
+}
+html, body {
+    height: 100%;
+}
+.page-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ===== Top Header ===== */
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+        linear-gradient(rgba(24, 55, 67, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('img/ajrak3.jpeg');
+    background-size: 648px 135px;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.sidebar .logo {
+    height: 80px;
+}
+
+/* ===== Navigation Bar ===== */
+.header {
+    display: flex;
+    background: #009688;
+    padding: 13px;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* To wrap on smaller screens */
+}
+
+.header .tab {
+    margin: 0;
+}
+
+.header .tab a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    border-left: 1px solid #057568;
+    border-radius: 0;
+}
+
+.header .tab:first-child a {
+    border-left: none; /* No left border on first tab */
+}
+
+.header .tab a:not(.active):hover {
+    background: #00695C; /* Darker Teal */
+    border-radius: 4px;
+}
+
+.tab a.active {
+    background-color: #ffffff;
+    color: #009688;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Main Container ===== */
+.container {
+    flex: 1;
+    width: 95%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Headings ===== */
+h2 {
+    text-align: center;
+    color: #00796B; /* Brighter Teal Green */
+    margin-bottom: 20px;
+}
+
+/* ===== Form Styling ===== */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 90%;
+    margin: auto;
+    gap: 15px;
+}
+
+.form-container input, 
+.form-container textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: border-color 0.3s ease;
+    width: 200px;
+}
+
+.form-container textarea {
+    width: 250px;
+    height: 40px;
+}
+
+.form-container input:focus, 
+.form-container textarea:focus {
+    border-color: #009688;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.3);
+}
+
+/* ===== Submit Button ===== */
+.submit-btn {
+    width: 49%;
+    background: #009688; /* Medium Sea Green */
+    font-size: 18px;
+    padding: 14px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #00695C; /* Darker Teal */
+}
+
+/* ===== Buttons (Original Reverted) ===== */
+button, .add-btn, .submit-btn, .edit-btn, .save-btn, .delete-btn, .cancel-btn, .remove-btn {
+    padding: 7px 7px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 11px;
+    background: #009688; /* Medium Sea Green */
+    color: white;
+}
+
+/* Button Hover Effects */
+.add-btn:hover,
+.submit-btn:hover,
+.edit-btn:hover,
+.save-btn:hover {
+    background: #00695C; /* Darker Teal */
+}
+
+/* Special Buttons */
+.delete-btn {
+    background: red;
+    height: 29px;
+    width: 28px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.cancel-btn {
+    background: brown;
+}
+
+.cancel-btn:hover {
+    background: darkred;
+}
+
+.remove-btn {
+    background: red;
+    padding: 8px;
+}
+
+.remove-btn:hover {
+    background: darkred;
+}
+
+/* Editable Fields */
+.editable {
+    background: #e0f2f1; /* Light Teal Background */
+}
+
+/* ===== Responsive Design ===== */
+@media screen and (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#selectbox{
+	padding: 0px;
+    border-radius: 2px;
+}
+
+.editBtn, .deleteBtn, .edit-btn, .save-btn, .delete-btn, .cancel-btn, .remove-btn {
+    font-size: 12px !important;
+}
+
+button {
+    background: #00796B;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.add-btn {
+    margin-top: 5px;
+    width: 50px;
+}
+
+.add-btn:hover {
+    background: #0056b3;
+}
+
+.remove-btn {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remove-btn:hover {
+    background: #c82333;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999;
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff; 
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888; 
+    width: 400px; 
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa; 
+    float: right; 
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.close:hover { 
+    color: black; 
+    cursor: pointer; 
+}
+
+#successAlert {
+    background: #c8f7c5;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #4CAF50;
+    display: none;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-wrapper form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    background-color: #00796B;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    color:white;
+}
+
+label {
+    margin-right: 5px;
+}
+
+input, button {
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+	table-layout: auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 3px;
+    text-align: left;
+}
+
+td{
+	font-size: 13px;
+	    white-space: nowrap;
+}
+
+th {
+    background-color: #00796B;
+    color: white;
+
+}
+
+.upload-form-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upload-form-container input {
+    width: auto;
+}
+
+.toggle-container {
+    margin-top: 22px;
+}
+
+/* ===== Footer ===== */
+.footer {
+    width: 93%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 12px 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    color: #444;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.system-desc {
+    margin: 0;
+    font-weight: 400;
+    flex: 1;
+    min-width: 200px;
+}
+
+.developer {
+    margin: 0;
+    font-weight: 300;
+    color: #666;
+    text-align: right;
+}
+
+.gray-date { background-color: #d2d0d0; }
+.white-date { background-color: #ffffff; }
+
+#thwidth{ display: inline-block;} 
+.td33{ width:33px !important }
+
+.modal-content form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.modal-content label {
+    flex: 1 1 22%; /* 4 items per row with spacing */
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.modal-content input,
+.modal-content select {
+    padding: 6px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.modal-content button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.modal {
+  display: none; position: fixed; z-index: 999;
+  left: 0; top: 0; width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fff; margin: 10% auto; padding: 20px;
+  border: 1px solid #888; width: 60%;
+}
+.close { float: right; font-size: 28px; cursor: pointer; }
+
+
+
+/* Container for the table */
+   .table-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .paid-watermark {
+    position: absolute;
+    top: 40px; /* Adjust based on your table */
+    left: 50%;
+    transform: translateX(-50%) rotate(-20deg);
+    font-size: 80px;
+    color: rgba(0, 128, 0, 0.1); /* soft green watermark */
+    font-weight: 900;
+    pointer-events: none;
+    z-index: 10;
+    white-space: nowrap;
+  }
+
+  tr.paid {
+    background-color: #e6ffed;
+    color: #1e4620;
+    position: relative;
+    z-index: 2;
+  }
+
+  table {
+    position: relative;
+    z-index: 1;
+    overflow-x: auto;       /* enables horizontal scroll if content is too wide */
+    overflow-y: hidden;     /* optional: hide vertical scrollbar */
+   
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+    
+  }
+  td.selectlikeexcel {
+    cursor: pointer;
+    text-align: right;
+    user-select: none;
+  }
+  td.selectlikeexcel.selected {
+    background-color: #90caf9 !important;
+  }
+  #sumBox {
+    position: fixed;
+    padding: 5px 10px;
+    background: #222;
+    color: #fff;
+    border-radius: 4px;
+    pointer-events: none;
+    font-weight: bold;
+    display: none;
+	z-index: 9999;
+  }
+
+
+
+  .sidebar {
+    
+    width: 230px;
+    background-color: #009688;
+    position: fixed;
+    top: 0px; /* height of top-header */
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 20px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.sidebar .tab {
+    margin: 0;
+}
+
+.sidebar .tab a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s, color 0.3s;
+}
+
+.sidebar .tab a:hover {
+    background: #00695C;
+}
+
+.sidebar .tab a.active {
+    background-color: #ffffff;
+    color: #009688;
+    font-weight: bold;
+    box-shadow: inset 4px 0 0 #00695C;
+}
+
+.page-wrapper {
+    margin-left: 230px; /* same width as sidebar 
+   /* padding: 20px;*/
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+h3 {
+    color: #eff2ef;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* or however much space you want for the logo area */
+    flex-direction: column;
+}
+.h3b {
+border-bottom: 4px dotted rgba(255, 255, 255, 1.4);
+  padding-bottom: 35px;
+}
+
+
+.generateh3{
+    color: #060606;
+    text-align: left;
+    font-size: 16px;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between; /* spread them apart */
+  align-items: flex-end; /* ⬅️ align both blocks to the bottom */
+  gap: 20px; /* space between blocks */
+}
+
+.left-block,
+.right-block {
+  box-sizing: border-box;
+}
+
+.toggleColumns{
+    margin-top: 15px;
+}
+
+.lablecheckbox{
+    margin-bottom: 0px;
+}
+
+.table_chalan{
+    margin-top: 14px;
+}
+
+
+
+
+/* Base resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 15px;
+}
+
+/* The Chalan Receipt/Box Container */
+.chalan-container {
+    width: 100%;
+    max-width: 600px; /* Limits desktop width, but shrinks on mobile */
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Status Badge (Paid) */
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Responsive Grid Data Rows */
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* --- Mobile Responsiveness (Screen sizes smaller than 600px) --- */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .chalan-container {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    /* Stack key-value pairs vertically on very small screens if text is long */
+    .data-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .data-row span:last-child {
+        font-weight: bold;
+        color: #333;
+    }
+    
+    /* Make buttons full width on mobile for easier thumb tapping */
+    .btn {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* ==========================================
+   MOBILE RESPONSIVENESS INJECTIONS
+   ========================================== */
+
+/* 1. Base Setup for Smooth Mobile Scaling */
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents unwanted horizontal screen wobbling */
+}
+
+/* 2. Responsiveness for Devices Smaller than 992px (Tablets / Phones) */
+@media screen and (max-width: 992px) {
+    
+    /* Convert vertical sidebar to a clean top navigation header bar */
+    .sidebar {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto; /* Allows left-right swiping of navigation items */
+        padding: 10px !important;
+        background-color: #222; /* Fallback accent background color */
+        z-index: 999;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Hide the large logo from the navigation row on mobile viewports to save space */
+    .sidebar .logo-container, 
+    .sidebar .tab style {
+        display: none !important;
+    }
+    
+    /* Display tabs inline as horizontally scrollable buttons */
+    .sidebar .tab {
+        margin: 0 !important;
+        flex: 0 0 auto;
+    }
+
+    .sidebar .tab a {
+        padding: 10px 15px !important;
+        white-space: nowrap; /* Keeps link titles on a single clean line */
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    /* Remove padding/margin offsets meant for the desktop side panel layout */
+    .page-wrapper {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 5px !important;
+    }
+
+    /* 3. Handle Responsive Inline Forms (View and Extract Panels) */
+    .form-wrapper, .upload-form-container {
+        display: flex;
+        flex-direction: column !important;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .form-wrapper form, 
+    .upload-form-container form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Stretch text parameters, dates, and buttons to match full finger tap widths */
+    .form-wrapper input, 
+    .form-wrapper button,
+    .upload-form-container input,
+    .upload-form-container button {
+        width: 100% !important; 
+        max-width: 100% !important;
+        box-sizing: border-box;
+        height: 40px; /* Enhanced vertical touch targets */
+    }
+
+    /* 4. Implement Smooth Horizontal Swiping for the Massive Data Grid */
+    .table-wrapper {
+        width: 100% !important;
+        overflow-x: auto !important; /* Spawns clean horizontal scroll track when table overflows container boundaries */
+        -webkit-overflow-scrolling: touch;
+        margin-top: 15px;
+        position: relative;
+    }
+
+    #feesTable {
+        min-width: 900px; /* Prevents massive text columns from crushing together on mobile breakpoints */
+    }
+    
+    /* Keep Excel floating tool box dynamically adjusted safely out of text bounds */
+    #sumBox {
+        position: absolute !important;
+        z-index: 1000;
+    }
+}
