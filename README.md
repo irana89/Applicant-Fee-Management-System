@@ -64,7 +64,7 @@ A comprehensive **Core PHP & MySQL** web application designed to manage applican
 ## 📊 Reports
 
 - Fiscal Year Report (July–June)
-- Monthly Paid Challan Report
+- Monthly Paid Challan View / Report
 - Monthly Security Paper Report
 - Security Paper Receiving Report
 - Fee Collection Report
