@@ -36,28 +36,28 @@ A comprehensive **Core PHP & MySQL** web application designed to manage applican
 ## 📸 Screenshots
 
 ### Applicant Entry
-![Applicant Entry](screenshots/add-applicant.png)
+![Applicant Entry](Screenshots/add-applicant.png)
 
 ### Applicant Report
-![Applicant Report](screenshots/applicant-report.png)
+![Applicant Report](Screenshots/applicant-report.png)
 
 ### Paid Challan
-![Paid Challan](screenshots/challan.png)
+![Paid Challan](Screenshots/challan.png)
 
 ### Monthly Challan Report
-![Monthly Challan Report](screenshots/monthly-challan.png)
+![Monthly Challan Report](Screenshots/monthly-challan.png)
 
 ### Security Paper Monthly Report
-![Security Paper Monthly Report](screenshots/security-paper-monthly-report.png)
+![Security Paper Monthly Report](Screenshots/security-paper-monthly-report.png)
 
 ### Security Paper Report
-![Security Paper Report](screenshots/security-paper-report.png)
+![Security Paper Report](Screenshots/security-paper-report.png)
 
 ### Wasted Security Paper Report
-![Wasted Security Paper Report](screenshots/wasted-security-paper-report.png)
+![Wasted Security Paper Report](Screenshots/wasted-security-paper-report.png)
 
 ### Yearly Financial Report
-![Yearly Financial Report](screenshots/yearly-financial-report.png)
+![Yearly Financial Report](Screenshots/yearly-financial-report.png)
 
 ---
 
