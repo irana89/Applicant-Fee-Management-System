@@ -81,6 +81,47 @@ A comprehensive **Core PHP & MySQL** web application designed to manage applican
 
 ---
 
+## 📖 Usage Instructions
+
+### Default Login
+
+- **Username:** `admin`
+- **Password:** `admin321`
+
+### Getting Started
+
+1. Open **Security Paper Report** (`security_paper_report.php`).
+2. Add the available security paper range before registering applicants.
+
+Example:
+
+```
+From: AB396001
+To:   AB396500
+```
+
+### Applicant Registration
+
+- The next available security paper serial number is assigned automatically using AJAX.
+- The assigned serial number can be edited manually, and additional serial numbers can also be assigned if required.
+- A single applicant may have multiple records.
+- Applicant details (Token No., Date of Visit, Name, Father/Husband Name, CNIC, Cell Number, District, Taluka, and Deh) remain populated for consecutive entries to speed up data entry. Usually, only the Entry Number needs to be changed.
+- Click **Reset** before entering a new applicant.
+
+### Sample Data
+
+The database contains dummy data for:
+
+- District
+- Taluka
+- Deh (Agricultural Land)
+
+### Note
+
+This project was developed for a specific administrative workflow. Certain validations and restrictions are intentionally implemented according to operational requirements.
+
+---
+
 ## 👨‍💻 Author
 
 **Muhammad Iqbal Rana**
